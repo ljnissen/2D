@@ -14,6 +14,12 @@ class Game < Gosu::Window
     # ...
   end
 
+  def button_down(id)
+  	case id
+  		when Gosu::KbQ then close
+  	end
+  end
+
   def name
     'Game'
   end
