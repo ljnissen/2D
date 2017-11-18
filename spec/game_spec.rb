@@ -4,13 +4,14 @@ describe "Game" do
 	describe ".initialize" do
 		it "returns a Game object" do
 			expect(Game.new).to be_an_instance_of Game
+
 		end
 
 	end
 
 	describe ".name" do
-		it "returns a default name of 'Game'" do
-			expect(Game.new.name).to eq 'Game'
+		it "returns a default name" do
+			expect(Game.new.caption).to eq 'Game Window Caption'
 		end
 	end
 

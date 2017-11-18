@@ -3,7 +3,7 @@ require 'gosu'
 class Game < Gosu::Window
   def initialize
     super 640, 480
-    self.caption = "Tutorial Game"
+    self.caption = caption
   end
   
   def update
@@ -20,19 +20,14 @@ class Game < Gosu::Window
   	end
   end
 
-  def name
-    'Game'
+  def caption
+    'Game Window Caption'
   end
 end
 
-Game.new.show
+#Game.new.show
 
 
 
 
 
-class Game
-	def name
-		'Game'
-	end
-end
