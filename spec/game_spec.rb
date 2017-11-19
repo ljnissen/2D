@@ -10,7 +10,7 @@ describe "Game" do
 	end
 
 	describe ".name" do
-		it "returns a default name" do
+		it "returns a default caption" do
 			expect(Game.new.caption).to eq 'Game Window Caption'
 		end
 	end
