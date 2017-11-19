@@ -3,15 +3,16 @@ require_relative '../spec_helper'
 describe "Game" do 
 	describe ".new" do
 		it "returns a Game object" do
-			expect(Game.new).to be_an_instance_of Game
+			expect(GameWindow.new).to be_an_instance_of GameWindow
 
 		end
 
 	end
 
-	describe ".name" do
+	describe ".caption" do
 		it "returns a default caption" do
-			expect(Game.new.caption).to eq 'Game Window Caption'
+			game = GameWindow.new
+			expect(game.caption).to eq 'Game Window Caption'
 		end
 	end
 

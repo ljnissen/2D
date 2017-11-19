@@ -1,6 +1,6 @@
 require 'gosu'
 
-class Game < Gosu::Window
+class GameWindow < Gosu::Window
   def initialize
     super 640, 480
     self.caption = caption
