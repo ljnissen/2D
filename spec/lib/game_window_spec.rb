@@ -7,6 +7,16 @@ describe "Game" do
 
 		end
 
+		it "sets a default width" do
+			game = GameWindow.new
+			expect(game.width).to eq 800
+		end
+
+		it "sets a default height" do
+			game = GameWindow.new
+			expect(game.height).to eq 600
+		end
+
 	end
 
 	describe ".caption" do
