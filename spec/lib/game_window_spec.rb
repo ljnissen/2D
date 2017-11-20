@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
 
-describe "Game" do 
+describe GameWindow do 
 	describe ".new" do
 		before do
 			@game_window = GameWindow.new
@@ -21,6 +21,15 @@ describe "Game" do
 			expect(@game_window.height).to eq 600
 		end
 
+	end
+
+	describe ".button_down" do
+		it "closes the window the ESC button is pressed" do
+			game_window = GameWindow.new
+			escape_key = Gosu::KbEscape
+			expect_any_instance_of(GameWindow).to receive(:close)
+			game_window.button_down(escape_key)
+		end
 	end
 
 	describe ".caption" do

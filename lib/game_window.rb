@@ -18,7 +18,7 @@ class GameWindow < Gosu::Window
 
   def button_down(id)
   	case id
-  		when Gosu::KbQ then close
+  		when Gosu::KbEscape then close
   	end
   end
 
