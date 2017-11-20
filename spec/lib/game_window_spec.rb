@@ -2,19 +2,23 @@ require_relative '../spec_helper'
 
 describe "Game" do 
 	describe ".new" do
+		before do
+			@game_window = GameWindow.new
+		end
+
 		it "returns a Game object" do
-			expect(GameWindow.new).to be_an_instance_of GameWindow
+			expect(@game_window).to be_an_instance_of GameWindow
 
 		end
 
 		it "sets a default width" do
 			game = GameWindow.new
-			expect(game.width).to eq 800
+			expect(@game_window.width).to eq 800
 		end
 
 		it "sets a default height" do
 			game = GameWindow.new
-			expect(game.height).to eq 600
+			expect(@game_window.height).to eq 600
 		end
 
 	end
