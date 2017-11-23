@@ -17,9 +17,10 @@ class GameWindow < Gosu::Window
   end
 
   def button_down(id)
-  	case id
-  		when Gosu::KbEscape then close
-  	end
+    InputManager.new.button_down(id)
+  	#case id
+  	#	when Gosu::KbEscape then close
+  	# end
   end
 
   def caption

@@ -26,8 +26,9 @@ describe GameWindow do
 	describe ".button_down" do
 		it "closes the window the ESC button is pressed" do
 			game_window = GameWindow.new
+			expect_any_instance_of(InputManager).to receive(:button_down)
 			escape_key = Gosu::KbEscape
-			expect_any_instance_of(GameWindow).to receive(:close)
+			#expect_any_instance_of(GameWindow).to receive(:close)
 			game_window.button_down(escape_key)
 		end
 	end

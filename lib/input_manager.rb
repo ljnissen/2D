@@ -6,8 +6,8 @@ class InputManager
 		close
 	end
 
-	private
+	#private
 
-	def close
-	end
+	#def close
+	#end
 end
