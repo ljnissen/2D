@@ -5,6 +5,12 @@ describe InputManager do
 		it "creates an instance of the InputManager" do
 			expect(InputManager.new).to be_an_instance_of InputManager
 		end
+
+		it "sets an instance variable for the GameWindow" do
+			game_window = GameWindow.new
+			input_manager = InputManager.new(game_window)
+			expect(input_manager.instance_variable_get(:@game_window)).to eql(game_window)
+		end
 	end
 
 	describe ".button_down" do

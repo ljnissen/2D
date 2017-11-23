@@ -1,5 +1,6 @@
 class InputManager
-	def initialize
+	def initialize(game_window = GameWindow.new)
+		@game_window = game_window
 	end
 
 	def button_down(id)
