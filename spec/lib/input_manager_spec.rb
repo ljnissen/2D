@@ -14,9 +14,18 @@ describe InputManager do
 	end
 
 	describe ".button_down" do
-		it "receives the escape input and closes the window" do
+		it "receives the escape input and calls close" do
 			input_manager = InputManager.new
 			expect_any_instance_of(InputManager).to receive(:close)
+			
+			input_manager.button_down Gosu::KbEscape
+			
+		end
+
+		it "receives the escape input and calls close on a GameWindow" do
+			input_manager = InputManager.new
+			
+			expect_any_instance_of(GameWindow).to receive(:close)
 			input_manager.button_down Gosu::KbEscape
 			
 		end

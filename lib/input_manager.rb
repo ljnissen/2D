@@ -1,4 +1,6 @@
 class InputManager
+	attr_reader :game_window
+
 	def initialize(game_window = GameWindow.new)
 		@game_window = game_window
 	end
@@ -7,8 +9,9 @@ class InputManager
 		close
 	end
 
-	#private
+	private
 
-	#def close
-	#end
+	def close
+		game_window.close
+	end
 end
