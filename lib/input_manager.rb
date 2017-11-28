@@ -1,17 +1,10 @@
 class InputManager
-	attr_reader :game_window
+	attr_reader :target
 
-	def initialize(game_window = GameWindow.new)
-		@game_window = game_window
-	end
+
 
 	def button_down(id)
-		close
+		target.receive_input(id)
 	end
 
-	private
-
-	def close
-		game_window.close
-	end
 end
