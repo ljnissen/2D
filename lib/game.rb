@@ -1,6 +1,7 @@
 class Game
 	class << self
-		attr_reader :game_window, :input_manager
+		attr_accessor :game_window
+		attr_accessor :input_manager
 	end
 
 	def self.setup

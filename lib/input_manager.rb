@@ -1,10 +1,10 @@
 class InputManager
-	attr_reader :target
+	attr_accessor :target
 
 
 
-	def button_down(id)
-		target.receive_input(id)
+	def button_down id
+		target.receive_input id
 	end
 
 end
