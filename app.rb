@@ -4,4 +4,5 @@ end
 
 #window = GameWindow.new
 #window.show
-Game.new.start
+Game.setup
+Game.start

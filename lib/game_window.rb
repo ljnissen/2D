@@ -10,10 +10,6 @@ class GameWindow < Gosu::Window
   def update
     # ...
   end
-  
-  def draw
-    # ...
-  end
 
   def button_down id
     # InputManager.new.button_down(id)
@@ -24,7 +20,7 @@ class GameWindow < Gosu::Window
   end
 
   def receive_input input
-    'Game Window Caption'
+    close if input == Gosu::KbEscape
   end
 end
 
