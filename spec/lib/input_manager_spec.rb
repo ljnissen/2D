@@ -28,7 +28,7 @@ describe InputManager do
 
 
 
-	describe ".target" do
+	describe ".target=" do
 		it "returns the target for the input" do
 			another_game_window = GameWindow.new
 			input_manager.target = another_game_window
