@@ -11,6 +11,7 @@ class Map
 		@tiles = Gosu::Image.load_tiles Game.game_window,
 										file_path,
 										DEFAULT_TILE_SIZE,
+										DEFAULT_TILE_SIZE,
 										TILEABLE
 	end
 
