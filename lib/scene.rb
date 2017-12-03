@@ -7,10 +7,10 @@ class Scene
 	end
 
 	def update
-		sprites.each{ |sprite| sprite.update }
+		sprites.each { |sprite| sprite.update }
 	end
 
 	def draw
-		sprites.each{ |sprite| sprite.draw }
+		sprites.each { |sprite| sprite.draw }
 	end
 end

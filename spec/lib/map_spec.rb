@@ -17,6 +17,5 @@ describe Map do
 			expect(map.tiles.first).to receive(:draw)
 			map.draw
 		end
-	
 	end	
 end

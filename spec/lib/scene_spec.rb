@@ -11,4 +11,18 @@ describe Scene do
 			expect(scene.sprites).to_not be_empty
 		end
 	end	
+
+	describe ".update" do
+		it "updates each sprite" do
+			expect(scene.sprites.first).to receive(:update)
+			scene.update
+		end
+	end
+
+	describe ".draw" do
+		it "draw each sprite" do
+			expect(scene.sprites.first).to receive(:draw)
+			scene.draw
+		end
+	end
 end
