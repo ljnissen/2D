@@ -2,8 +2,8 @@ require 'gosu'
 
 class GameWindow < Gosu::Window
   # set up initial game window
-  def initialize width = 800, height = 600
-    super width, height
+  def initialize width = 1440, height = 900
+    super width, height, true
     self.caption = 'Game Window Caption'
   end
   
