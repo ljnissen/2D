@@ -4,6 +4,7 @@ class Map
 	EXTENSION			= ".png"
 	TILEABLE			= true
 	DEFAULT_TILE_SIZE	= 100
+	TILE_OFFSET_Y		= 5
 
 	attr_reader :tile_size
 
@@ -23,8 +24,8 @@ class Map
 
 		rows.times do |y|
 			columns.times do |x|
-					x1 * map_offset_x + x * tile_size
-					y1 * map_offset_y + y * tile_size - (y*TILE_OFFSET_Y)
+					x1 = map_offset_x + x * tile_size
+					y1 = map_offset_y + y * tile_size - (y*TILE_OFFSET_Y)
 					z1 = z_index
 					draw_tile tile, x1, y1, z1
 

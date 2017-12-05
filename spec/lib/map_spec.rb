@@ -5,10 +5,11 @@ describe Map do
 
 	describe "Map attributes" do
 		it { expect(Map::TILE_SETS_PATH).to eq "graphics/tile_sets" }
-		it { expect(Map::DEFAULT_TILE_SET).to eq "tile_set" }
+		it { expect(Map::DEFAULT_TILE_SET).to eq "big_tiles" }
 		it { expect(Map::EXTENSION).to eq ".png" }
 		it { expect(Map::TILEABLE).to eq true }
-		it { expect(Map::DEFAULT_TILE_SIZE).to eq 32 }
+		it { expect(Map::DEFAULT_TILE_SIZE).to eq 100 }
+		it { expect(Map::TILE_OFFSET_Y).to eq 5 }
 	end
 
 	describe ".tile_size" do

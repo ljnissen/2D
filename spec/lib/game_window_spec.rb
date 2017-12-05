@@ -3,8 +3,8 @@ require_relative '../spec_helper'
 describe GameWindow do
 
 	let(:game_window) { GameWindow.new }
-	let(:width) 	  { 800 }
-	let(:height)      { 600 }
+	let(:width) 	  { 1440 }
+	let(:height)      { 900 }
 	let(:keys)		  { { escape: Gosu::KbEscape } }
 	describe ".new" do
 		it "returns a GameWindow object" do
